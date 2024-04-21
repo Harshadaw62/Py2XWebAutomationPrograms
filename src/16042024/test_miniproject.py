@@ -25,9 +25,10 @@ def test_make_appointment():
     password_element = driver.find_element(By.ID, "txt-password")
     password_element.send_keys("ThisIsNotAPassword")
 
-    login_btn = driver.find_element(By.ID, value="btn-login")
+    login_btn = driver.find_element(By.ID,"btn-login")
     login_btn.click()
 
+    time.sleep(5)
     assert driver.current_url == "https://katalon-demo-cura.herokuapp.com/#appointment"
 
     verify_apt_txt = driver.find_element(By.CLASS_NAME, "col-sm-12")
