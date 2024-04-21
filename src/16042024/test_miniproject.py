@@ -33,3 +33,5 @@ def test_make_appointment():
     verify_apt_txt = driver.find_element(By.CLASS_NAME, "col-sm-12")
     print(verify_apt_txt.text)
     assert verify_apt_txt.text == "Make Appointment"
+    driver.quit()
+
