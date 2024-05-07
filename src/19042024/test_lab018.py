@@ -6,8 +6,7 @@ from selenium.webdriver.common.by import By
 
 # Selenium 4
 #XPATH
-# Syntax- //Tagname[@Attributename]
-
+# Syntax- //Tagname[@Attribute=value]
 #//input[@id='login-username']
 #//input[@name="username"]
 # //input[@class="text-input W(100%)"]-Not Recommended
